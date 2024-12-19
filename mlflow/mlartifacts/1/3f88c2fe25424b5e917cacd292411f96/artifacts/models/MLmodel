@@ -1,0 +1,35 @@
+artifact_path: models
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.6
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.2
+mlflow_version: 2.18.0
+model_size_bytes: 1920731
+model_uuid: 6f5ff25020e64a2b8a2a91738f67ea34
+run_id: 3f88c2fe25424b5e917cacd292411f96
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "string", "name": "Car_Name", "required": true}, {"type": "integer",
+    "name": "Year", "required": true}, {"type": "double", "name": "Present_Price",
+    "required": true}, {"type": "integer", "name": "Driven_kms", "required": true},
+    {"type": "string", "name": "Fuel_Type", "required": true}, {"type": "string",
+    "name": "Selling_type", "required": true}, {"type": "string", "name": "Transmission",
+    "required": true}, {"type": "long", "name": "Owner", "required": true}, {"type":
+    "string", "name": "Driven_run", "required": true}]'
+  outputs: null
+  params: null
+utc_time_created: '2024-11-21 07:40:16.388364'
